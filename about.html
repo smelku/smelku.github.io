@@ -110,42 +110,26 @@ with somewhere to go.-->
 
             <h1>info</h1>
             <p>
-                this site serves as a demesne for the work of lily "smelku" c.
-                buckthorn, aesthete and social critic, writer, graphic designer,
-                photographer, artist, and curator of the royal botanical garden.
-                she loves to play and laugh but is also rather fragile and
-                morose.
+                Lily "smelku" C. Buckthorn (b. September) is a graphic designer,
+                photographer, artist, writer, and Level 3 Research Associate of
+                the Royal Botanical Laboratory – Department of Pigments and
+                Textiles, currently living in California.
             </p>
             <br />
-            <p align="right">あたしは陰キャ彼女です</p>
+            <p align="center">あたしは陰キャ彼女です</p>
+
+            <p>
+                Her extracurricularhobbies include, but are not limited to:
+                cooking and recipe development, composing music, French Baroque
+                composers, caudiciform plants, furniture restoration, Walstad
+                method aquariums, the Valve Software videogame Deadlock,
+                harpischords and the piano.
+            </p>
             <br />
             <h1>nav</h1>
             <p>
+                <a href="/">home</a><br />
                 <a href="/work">work</a>
-            </p>
-            <h1 align="right">contact</h1>
-            <p align="right">
-                <button id="emailButton">email</button>
-                <script>
-                    const email = "lily@lily.museum";
-                    const button = document.getElementById("emailButton");
-
-                    button.addEventListener("click", async () => {
-                        try {
-                            await navigator.clipboard.writeText(email);
-                            button.textContent = "Copied to clipboard!";
-                            setTimeout(() => {
-                                button.textContent = "email";
-                            }, 2000);
-                        } catch (err) {
-                            console.error("Failed to copy email");
-                        }
-                    });
-                </script>
-
-                <a href="https://bsky.app/profile/morsel.bsky.social">bluesky</a
-                ><br />
-                <a href="https://x.com/smelku">twitter</a><br />
             </p>
         </article>
 
