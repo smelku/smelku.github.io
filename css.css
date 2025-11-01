@@ -16,20 +16,17 @@
     src: url(./fonts/NimbusSanL-ReguItal.woff);
 }
 
-footer {
-    text-align: center;
-    font-size: 12px;
-}
-
-p.footer {
-    font-size: 12px;
-    color: #555;
+::selection {
+    color: #000;
+    text-shadow: #bdb3af 0px 0px 6px;
+    text-decoration: underline dotted;
 }
 
 p,
 h2,
 h3,
-h4 {
+h4,
+header {
     font-family: "NimbusSanL-Regu", sans-serif;
     font-size: 24px;
     font-weight: normal;
@@ -51,6 +48,20 @@ article {
     margin: 0 auto;
 }
 
+footer {
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    font-size: 12px;
+    margin: 0;
+}
+
+p.footer {
+    font-size: 12px;
+    color: #555;
+}
 @media (min-width: 800px) {
     p,
     h1,
@@ -107,12 +118,26 @@ hgroup h3 {
     margin-right: 10px;
 }
 
-img[src="./images/dune.png"] {
-    pointer-events: none;
-}
-
 mark {
     background-color: #bdb3af;
+}
+
+.header-right {
+    float: right;
+    padding: 5px;
+    max-width: 400px;
+    margin-bottom: 1em;
+}
+
+.header-left {
+    float: left;
+    padding: 5px;
+    max-width: 400px;
+    margin-bottom: 1em;
+}
+
+img.header-left {
+    width: 30%;
 }
 
 .path {
