@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What awaits?...</title>
+    <link rel="stylesheet" href="./emma.css" />
+  </head>
+
+  <body>
+    <div class="login-container">
+      <div class="login-wrapper">
+        <!-- Logo -->
+        <div class="logo-container">
+          <img src="./emma.png" alt="Logo" class="logo" />
+        </div>
+
+        <!-- Login Form -->
+        <form id="loginForm" class="login-form">
+          <div class="form-group">
+            <label for="username"></label>
+            <input 
+              type="text" 
+              id="username" 
+              name="username" 
+              placeholder="USER" 
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password"></label>
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              placeholder="PASS" 
+              required 
+            />
+          </div>
+
+          <button type="submit" class="submit-btn">ACCESS</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        
+        console.log('Login attempt:', { username: username, password: password });
+        
+        // Add your login logic here
+        alert('Login submitted! Check console for details.');
+      });
+
+      // Add embossed effect on focus
+      const inputs = document.querySelectorAll('input');
+      inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+          this.classList.add('focused');
+        });
+        
+        input.addEventListener('blur', function() {
+          this.classList.remove('focused');
+        });
+      });
+    </script>
+  </body>
+</html>
