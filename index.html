@@ -133,7 +133,7 @@ with somewhere to go.-->
             <p align="right">
                 <button id="emailButton">email</button><br />
                 <script>
-                    const email = "lily@lily.museum";
+                    const email = "lily.eryngii@gmail.com";
                     const button = document.getElementById("emailButton");
 
                     button.addEventListener("click", async () => {
@@ -142,7 +142,7 @@ with somewhere to go.-->
                             button.textContent = "copied";
                             setTimeout(() => {
                                 button.textContent = "email";
-                            }, 500);
+                            }, 1500);
                         } catch (err) {
                             console.error("Failed to copy email");
                         }
