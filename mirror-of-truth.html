@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>royal museum 2</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="annex of learning for the work of lily smelku"
+        />
+        <link rel="stylesheet" href="./gallery.css" />
+        <link rel="icon" href="./images/favicon.png" />
+    </head>
+    <body>
+        <article>
+            <header>
+                <div class="header-left">
+                    <img class="header-left" src="./images/footer.png" />
+                </div>
+                <div class="header-right">
+                    <h1 align="right">nav</h1>
+                    <p>
+                        <a href="./index.html">home</a> |
+                        <a href="./about.html">bio</a> | </a>
+                        <a href="./construction.html">blog</a> |
+                        <a href="./work.html">work</a>
+                    </p>
+                </div>
+            </header>
+
+            <p align="center">
+                <a align="center"href="javascript:history.back()">return</a>
+                <img width="300" alt="Mirror of Truth" src="./images/gallery/mirror-of-truth/title.png">
+            <h1 align="center">2025</h1>
+                </p>
+
+        </article>
+
+        <div class="gallery">
+            <img
+                src="./images/gallery/mirror-of-truth/1.png"
+                alt="Image 1"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/2.png"
+                alt="Image 2"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/3.png"
+                alt="Image 3"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/4.png"
+                alt="Image 4"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/5.png"
+                alt="Image 5"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/6.png"
+                alt="Image 6"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/7.png"
+                alt="Image 7"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/9.png"
+                alt="Image 9"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/10.png"
+                alt="Image 10"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/11.png"
+                alt="Image 11"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/12.png"
+                alt="Image 12"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/13.png"
+                alt="Image 13"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/14.png"
+                alt="Image 14"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/15.png"
+                alt="Image 15"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/16.png"
+                alt="Image 16"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/17.png"
+                alt="Image 17"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/18.png"
+                alt="Image 18"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/19.png"
+                alt="Image 19"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/20.png"
+                alt="Image 20"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/21.png"
+                alt="Image 21"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/22.png"
+                alt="Image 22"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/23.png"
+                alt="Image 23"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/24.png"
+                alt="Image 24"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/mirror-of-truth/25.png"
+                alt="Image 25"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+
+
+
+
+
+
+
+
+            <!-- Add more images here as needed -->
+        </div>
+
+        <div class="modal" onclick="closeModal()">
+            <div class="close-btn" onclick="closeModal()">CLOSE</div>
+            <img id="modalImage" src="" alt="Modal Image" />
+            <!-- Add left and right half divs -->
+            <div
+                class="left-half"
+                onclick="changeModalImage(-1); event.stopPropagation();"
+            ></div>
+            <div
+                class="right-half"
+                onclick="changeModalImage(1); event.stopPropagation();"
+            ></div>
+            <div
+                class="arrow-btn prev-btn"
+                onclick="changeModalImage(-1); event.stopPropagation();"
+            >
+                &#9753;
+            </div>
+            <div
+                class="arrow-btn next-btn"
+                onclick="changeModalImage(1); event.stopPropagation();"
+            >
+                &#10087;
+            </div>
+        </div>
+
+        <script>
+            const images = document.querySelectorAll(".gallery img");
+            let currentImageIndex = 0;
+
+            function openModal(imgElement) {
+                const modal = document.querySelector(".modal");
+                const modalImage = document.getElementById("modalImage");
+
+                modal.style.display = "block";
+                modalImage.src = imgElement.src;
+                currentImageIndex = Array.from(images).indexOf(imgElement);
+            }
+
+            function closeModal() {
+                const modal = document.querySelector(".modal");
+                modal.style.display = "none";
+            }
+
+            function changeModalImage(direction) {
+                currentImageIndex += direction;
+                if (currentImageIndex >= images.length) {
+                    currentImageIndex = 0;
+                } else if (currentImageIndex < 0) {
+                    currentImageIndex = images.length - 1;
+                }
+                document.getElementById("modalImage").src =
+                    images[currentImageIndex].src;
+            }
+        </script>
+
+        <footer>
+            <p class="footer">76°05'40.5"N 60°09'41.9"E</p>
+        </footer>
+
+    </body>
+</html>

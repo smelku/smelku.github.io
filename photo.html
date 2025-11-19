@@ -1,1 +1,140 @@
-45°31'34.7"N 73°34'41.3"W
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>royal museum 2</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="annex of learning for the work of lily smelku"
+        />
+        <link rel="stylesheet" href="./gallery.css" />
+        <link rel="icon" href="./images/favicon.png" />
+    </head>
+    <body>
+        <article>
+            <header>
+                <div class="header-left">
+                    <img class="header-left" src="./images/footer.png" />
+                </div>
+                <div class="header-right">
+                    <h1 align="right">nav</h1>
+                    <p>
+                        <a href="./index.html">home</a> |
+                        <a href="./about.html">bio</a> | </a>
+                        <a href="./construction.html">blog</a> |
+                        <a href="./work.html">work</a>
+                    </p>
+                </div>
+            </header>
+
+            <p align="right">
+                <a href="javascript:history.back()">return</a>
+                <br>
+                <br>
+            <h1 align="center">playing attention (2018-2025)</h1>
+            </p>
+        </article>
+
+        <div class="gallery">
+            <img
+                src="./images/gallery/path_to_image1.jpg"
+                alt="Image 1"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/path_to_image2.jpg"
+                alt="Image 2"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/path_to_image3.jpg"
+                alt="Image 3"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/path_to_image4.png"
+                alt="Image 4"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/path_to_image5.png"
+                alt="Image 5"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <img
+                src="./images/gallery/path_to_image6.png"
+                alt="Image 6"
+                onclick="openModal(this)"
+                loading="lazy"
+            />
+            <!-- Add more images here as needed -->
+        </div>
+
+        <div class="modal" onclick="closeModal()">
+            <div class="close-btn" onclick="closeModal()">CLOSE</div>
+            <img id="modalImage" src="" alt="Modal Image" />
+            <!-- Add left and right half divs -->
+            <div
+                class="left-half"
+                onclick="changeModalImage(-1); event.stopPropagation();"
+            ></div>
+            <div
+                class="right-half"
+                onclick="changeModalImage(1); event.stopPropagation();"
+            ></div>
+            <div
+                class="arrow-btn prev-btn"
+                onclick="changeModalImage(-1); event.stopPropagation();"
+            >
+                &#9753;
+            </div>
+            <div
+                class="arrow-btn next-btn"
+                onclick="changeModalImage(1); event.stopPropagation();"
+            >
+                &#10087;
+            </div>
+        </div>
+
+        <script>
+            const images = document.querySelectorAll(".gallery img");
+            let currentImageIndex = 0;
+
+            function openModal(imgElement) {
+                const modal = document.querySelector(".modal");
+                const modalImage = document.getElementById("modalImage");
+
+                modal.style.display = "block";
+                modalImage.src = imgElement.src;
+                currentImageIndex = Array.from(images).indexOf(imgElement);
+            }
+
+            function closeModal() {
+                const modal = document.querySelector(".modal");
+                modal.style.display = "none";
+            }
+
+            function changeModalImage(direction) {
+                currentImageIndex += direction;
+                if (currentImageIndex >= images.length) {
+                    currentImageIndex = 0;
+                } else if (currentImageIndex < 0) {
+                    currentImageIndex = images.length - 1;
+                }
+                document.getElementById("modalImage").src =
+                    images[currentImageIndex].src;
+            }
+        </script>
+
+        <footer>
+            <p class="footer">76°05'40.5"N 60°09'41.9"E</p>
+        </footer>
+
+    </body>
+</html>
