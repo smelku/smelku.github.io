@@ -35,7 +35,7 @@ header {
 }
 
 h1 {
-    font-family: "NumbusSanL-Bold", sans-serif;
+    font-family: "NimbusSanL-Bold", sans-serif;
     font-size: 24px;
     font-weight: bold;
     line-height: 1.2;
@@ -56,6 +56,10 @@ footer {
     position: fixed;
     font-size: 12px;
     margin: 0;
+}
+
+p {
+    margin-bottom: 1em;
 }
 
 p.footer {
@@ -98,10 +102,6 @@ button {
 button::after {
     content: "⭟";
     color: #555;
-}
-
-p {
-    margin-bottom: 1em;
 }
 
 img {

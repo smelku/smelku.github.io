@@ -21,20 +21,25 @@
                     <h1 align="right">nav</h1>
                     <p>
                         <a href="./index.html">home</a> |
-                        <a href="./about.html">bio</a> | </a>
+                        <a href="./about.html">bio</a> |
                         <a href="./construction.html">blog</a> |
                         <a href="./work.html">work</a>
                     </p>
                 </div>
             </header>
 
-            <p align="center">
-                <a align="center"href="javascript:history.back()">return</a>
-                <img width="300" alt="Mirror of Truth" src="./images/gallery/mirror-of-truth/title.png">
-            <h1 align="center">2025</h1>
-                </p>
-
+            <p align="right">
+                <a href="javascript:history.back()">return</a><br />
+            </p>
         </article>
+        <p align="center">
+            <img
+                width="300"
+                alt="Mirror of Truth"
+                src="./images/gallery/mirror-of-truth/title.png"
+            />
+        </p>
+        <h1 align="center">2025</h1>
 
         <div class="gallery">
             <img
@@ -182,13 +187,6 @@
                 loading="lazy"
             />
 
-
-
-
-
-
-
-
             <!-- Add more images here as needed -->
         </div>
 
@@ -229,11 +227,15 @@
                 modal.style.display = "block";
                 modalImage.src = imgElement.src;
                 currentImageIndex = Array.from(images).indexOf(imgElement);
+                setTimeout(() => modal.classList.add("active"), 10);
             }
 
             function closeModal() {
                 const modal = document.querySelector(".modal");
-                modal.style.display = "none";
+                modal.classList.remove("active");
+                setTimeout(() => {
+                    modal.style.display = "none";
+                }, 200);
             }
 
             function changeModalImage(direction) {
@@ -251,6 +253,5 @@
         <footer>
             <p class="footer">76°05'40.5"N 60°09'41.9"E</p>
         </footer>
-
     </body>
 </html>
