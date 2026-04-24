@@ -216,7 +216,6 @@ img.header-left {
     left: 0;
     width: 50%;
     height: 100%;
-    cursor: url("cursor.png"), default;
 }
 /* Add a div to cover the right half of the screen */
 .right-half {
@@ -225,5 +224,24 @@ img.header-left {
     right: 0;
     width: 50%;
     height: 100%;
-    cursor: url("cursor.png"), default;
+}
+
+#modalCaption {
+    text-align: center;
+    margin-top: 35px;
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+
+#modalTitle {
+    margin: 0;
+    font-size: 1.5em;
+    color: black;
+}
+
+#modalDescription {
+    margin: 5px 0 0 0;
+    font-size: 1em;
+    color: black;
 }
