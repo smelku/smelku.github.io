@@ -22,6 +22,10 @@
     text-decoration: underline dotted;
 }
 
+.gallery-title {
+    text-align: center;
+}
+
 p,
 h2,
 h3,
@@ -40,6 +44,10 @@ h1 {
     font-weight: bold;
     line-height: 1.2;
     margin: 0;
+}
+
+h2 {
+    font-style: italic;
 }
 
 article {
@@ -61,6 +69,14 @@ footer {
 p.footer {
     font-size: 12px;
     color: #555;
+}
+
+p.gallery-desc {
+    font-size: 14px;
+    max-width: 60ch;
+    text-align: justify;
+    margin: 0 auto;
+    padding-top: 6px;
 }
 
 @media (min-width: 800px) {

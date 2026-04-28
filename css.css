@@ -151,3 +151,21 @@ img.header-left {
         stroke-dashoffset: 0;
     }
 }
+
+.preview-panel {
+    display: none;
+    position: fixed;
+    top: 75%;
+    right: 35%;
+    transform: translateY(-50%);
+    width: 250px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.preview-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
