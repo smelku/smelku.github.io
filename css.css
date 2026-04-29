@@ -85,7 +85,7 @@ a {
 }
 
 a::after {
-    content: "⭟";
+    content: "\2B5F";
     color: #555;
 }
 
@@ -100,7 +100,7 @@ button {
     padding: 0;
 }
 button::after {
-    content: "⭟";
+    content: "\2B5F";
     color: #555;
 }
 
