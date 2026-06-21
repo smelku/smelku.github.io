@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "NimbusSanL-Regu";
+    font-style: normal;
+    src: url(./fonts/NimbusSanL-Regu.woff);
+}
+
+@font-face {
+    font-family: "NimbusSanL-Bold";
+    font-style: bold;
+    src: url(./fonts/NimbusSanL-Bold.woff);
+}
+
+@font-face {
+    font-family: "NimbusSanL-ReguItal";
+    font-style: italic;
+    src: url(./fonts/NimbusSanL-ReguItal.woff);
+}
+
+::selection {
+    color: #000;
+    text-shadow: #bdb3af 0px 0px 6px;
+    text-decoration: underline dotted;
+}
+
+.gallery-title {
+    text-align: center;
+}
+
+p,
+h2,
+h3,
+h4,
+header {
+    font-family: "NimbusSanL-Regu", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h1 {
+    font-family: "NimbusSanL-Bold", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h2 {
+    font-style: italic;
+}
+
+article {
+    padding: 5px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    font-size: 12px;
+    margin: 0;
+}
+
+p.footer {
+    font-size: 12px;
+    color: #555;
+}
+
+p.gallery-desc {
+    font-size: 14px;
+    max-width: 60ch;
+    text-align: justify;
+    margin: 0 auto;
+    padding-top: 6px;
+}
+
+@media (min-width: 800px) {
+    p,
+    h1,
+    h3 {
+        font-size: 24px;
+    }
+    article {
+        margin: 3em auto;
+    }
+}
+
+a {
+    color: #000;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+a::after {
+    content: "⭟";
+    color: #555;
+}
+
+button {
+    font-size: 24px;
+    color: #000;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+button::after {
+    content: "⭟";
+    color: #555;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+hgroup h3,
+hgroup p {
+    display: inline;
+}
+
+hgroup h3 {
+    margin-right: 10px;
+}
+
+mark {
+    background-color: #bdb3af;
+}
+
+.header-right {
+    float: right;
+    padding: 5px;
+    max-width: 400px;
+    margin-bottom: 1em;
+}
+
+.header-left {
+    float: left;
+    padding: 5px;
+    max-width: 400px;
+    margin-bottom: 1em;
+}
+
+.one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1850px;
+    margin: 0 auto;
+}
+
+.one h1 {
+    flex-basis: 100%;
+    margin-top: 5em;
+}
+
+.one h2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 0.25em;
+    font-size: 14px;
+}
+
+.one img {
+    max-width: 600px;
+    margin: 0 5px 15px 5px;
+}
+
+img.header-left {
+    width: 30%;
+}
